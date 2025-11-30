@@ -44,8 +44,8 @@ row-gap: 1rem;
 .before-after-summary {
 display: flex;
 flex-direction: column;
-margin-top: 35px !important;
-margin-bottom:35px !important;
+margin-top: 50px !important;
+margin-bottom:45px !important;
 }
 
 .charts-container .sub-charts {
@@ -62,7 +62,8 @@ margin-bottom: 1rem;
 }
 
 .custom1 {
-margin-bottom: 80px;
+margin-top: 150px;
+margin-bottom:30px;
 }
 .custom2 {
 margin-bottom: 20px;
