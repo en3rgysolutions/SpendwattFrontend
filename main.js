@@ -25,6 +25,10 @@ document.head.appendChild(style);
 // --- Start of CSS Injection ---
 addGlobalStyle(`
 
+.Header-main {
+    margin-top: -50px;
+}
+
 .report {
 padding-top: 20px;
 font-family: 'Arial', sans-serif;
@@ -221,6 +225,20 @@ grid-template-columns: 1fr;
 font-size: 18px;
 letter-spacing: normal;
 }
+
+
+.customText {
+min-height: 80px;
+}
+
+ @media print {
+.customText {
+border:0px;
+resize: none;
+}
+}
+
+
 </style>
 
 `);
@@ -301,20 +319,28 @@ const paymentFinanceHTML = `<div class="break-inside-avoid">
 <h1>Finance Partners</h1>
 <div class="finance-partners-grid">
 <div class="partner-item">
+<a href="https://secure.parkerlane.com.au/" style="text-decoration:none;">
 <img src="https://en3rgy.au/wp-content/uploads/2025/10/humm-1.png" alt="Parker Lane Logo" class="partner-logo">
-<p>Parker Lane reverses the traditional finance model. We start with the biggest problems first, understanding the challenges then working with banks and lenders to create superior products and solutions. Our easy process and incredible team make it simple to apply, get approved.</p>
+<p>Parker Lane reverses the traditional finance model. We start with the biggest problems first, understanding the challenges then working with banks and lenders to create superior products and solutions. Our easy process and incredible team make it simple to apply, get approved....</p>
+</a>
 </div>
 <div class="partner-item">
+<a href="https://www.hummloan.com/eligibility-criteria/" style="text-decoration:none;">
 <img src="https://en3rgy.au/wp-content/uploads/2025/10/humm.png" alt="humm Logo" class="partner-logo">
-<p>As a humm partner, we provide you with access to exclusive Long Term Interest Free finance that gives you 0% Interest on Fixed Instalment Plans for up to 60 months to pay off your purchase. It’s easy to apply online and takes only a few minutes.</p>
+<p>As a humm partner, we provide you with access to exclusive Long Term Interest Free finance that gives you 0% Interest on Fixed Instalment Plans for up to 60 months to pay off your purchase. It’s easy to apply online and takes only a few minutes....</p>
+</a>
 </div>
 <div class="partner-item">
+<a href="https://handyfinance.com.au/green-loans/" style="text-decoration:none;">
 <img src="https://en3rgy.au/wp-content/uploads/2025/10/afterpay.png" alt="handypay Logo" class="partner-logo">
-<p>With Handypay Green Loans, you can borrow up to $30,000 for energy efficient products such as solar, solar hot water, batteries, or more. The Handypay 0% interest payment plan provides you the opportunity to be sustainable today.</p>
+<p>With Handypay Green Loans, you can borrow up to $30,000 for energy efficient products such as solar, solar hot water, batteries, or more. The Handypay 0% interest payment plan provides you the opportunity to be sustainable today....</p>
+</a>
 </div>
 <div class="partner-item">
+<a href="https://www.afterpay.com/en-AU" style="text-decoration:none;">
 <img src="http://en3rgy.au/wp-content/uploads/2025/10/afterpay-1.png" alt="afterpay Logo" class="partner-logo">
-<p>With Afterpay, Pay in 4 interest-free installments. Budget your spending. Earn rewards when you shop. Discover thousands of brands and millions of products, online and in-store. Do it all in the app, easily and securely.</p>
+<p>With Afterpay, Pay in 4 interest-free installments. Budget your spending. Earn rewards when you shop. Discover thousands of brands and millions of products, online and in-store. Do it all in the app, easily and securely....</p>
+</a>
 </div>
 </div>
 </div>
@@ -350,7 +376,7 @@ const HeaderHTML = `
 
 <b><p>Hi <span id="ThisName"></span>,</p></b>
 
-<p>Thank you for choosing Sharpe Energy Solutions as your trusted energy solutions retailer. With over 45 years of successful operation, we pride ourselves on sourcing high-quality, high-efficiency solar modules and battery systems employing accredited electricians to deliver installations that meet the highest professional and ethical standards.</p>
+<p><textarea style="width:100%" class="customText">Thank you for choosing Sharpe Energy Solutions as your trusted energy solutions retailer. With over 45 years of successful operation, we pride ourselves on sourcing high-quality, high-efficiency solar modules and battery systems employing accredited electricians to deliver installations that meet the highest professional and ethical standards.</textarea></p>
 
 <p>As one of the industry’s pioneering solar & battery specialists, our strength lies in our experience. Backed by
 decades of combined expertise, our team of certified electricians and Clean Energy Council-accredited technicians provides tailored solar and battery solutions designed to reduce your energy costs and environmental footprint.</p>
