@@ -378,8 +378,8 @@ const HeaderHTML = `
 
 <p><textarea style="width:100%" class="customText">Thank you for choosing Sharpe Energy Solutions as your trusted energy solutions retailer. With over 45 years of successful operation, we pride ourselves on sourcing high-quality, high-efficiency solar modules and battery systems employing accredited electricians to deliver installations that meet the highest professional and ethical standards.</textarea></p>
 
-<p>As one of the industry’s pioneering solar & battery specialists, our strength lies in our experience. Backed by
-decades of combined expertise, our team of certified electricians and Clean Energy Council-accredited technicians provides tailored solar and battery solutions designed to reduce your energy costs and environmental footprint.</p>
+<p><textarea style="width:100%" class="customText">As one of the industry’s pioneering solar & battery specialists, our strength lies in our experience. Backed by
+decades of combined expertise, our highly capable team of engineers and Clean Energy Council-accredited technicians provides engineered solar, battery and Air Conditioning solutions designed to reduce your energy costs and environmental footprint.</textarea></p>
 
 <h5><b>SHARPE ENERGY SOLUTIONS APPROACH</b></h5>
 
@@ -388,7 +388,7 @@ decades of combined expertise, our team of certified electricians and Clean Ener
 comparing savings potential across different options.</p>
 
 <span><b>EVALUATE</span></b>
-<p>Make the leap to next-generation technology. Switching to ALL-Electric isn’t just a trend, it’s a smart investment that can save you thousands over time.</p>
+<p>Make the leap to Next-Generation technology. Switching to ALL-Electric isn’t just a trend, it’s a smart investment that can save you thousands over time.</p>
 
 <span><b>INVEST</span></b>
 <p>Make smart choices that pay off. Take advantage of Government Rebates & Incentives to lower upfront costs and maximize your return.</p>
