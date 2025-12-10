@@ -279,6 +279,16 @@ document.querySelectorAll('div').forEach(div => {
     }
 });
 
+    document.querySelectorAll('span').forEach(span => {
+if (span.textContent.trim() === 'Existing product') {
+    const elementImage = document.querySelector(".quote-row .d-flex.w-100 .product-image");
+    const elementProps = document.querySelector(".quote-row .d-flex.w-100 .product-props");
+
+    if (elementImage) elementImage.style.display = 'none';
+    if (elementProps) elementProps.style.display = 'none';
+}
+});
+
 
 
 let i = 0;
