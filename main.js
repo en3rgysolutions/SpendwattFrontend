@@ -281,9 +281,27 @@ document.querySelectorAll('div').forEach(div => {
 
     document.querySelectorAll('span').forEach(span => {
 if (span.textContent.trim() === 'Existing product') {
+
+     document.querySelectorAll('span').forEach(span => {
+    const pattern = /\d+(\.\d+)?kW Solar Installation/;
+    if (pattern.test(span.textContent.trim())) {
+        span.textContent = 'Inverter Installation';
+    }
+});
+
+    const elementChange = document.querySelectorAll(".product-box .product-size .fw-bold");
+    const elementChange2 = document.querySelector(".product-box .product-size .product-tech");
+    const elementChange3 = document.querySelector(".product-box .product-thumbnails img");
     const elementImage = document.querySelector(".quote-row .d-flex.w-100 .product-image");
     const elementProps = document.querySelector(".quote-row .d-flex.w-100 .product-props");
+    const elementItemHide = document.querySelector(".quote-content .break-inside-avoid .product-summary .product-size .product-tech");
+    const elementItemHide2 = document.querySelector(".quote-content .quote-row .product-props");
 
+    if (elementChange) elementChange[0].innerHTML = 'Inverter';
+    if (elementChange2) elementChange2.style.display = 'none';
+    if (elementItemHide) elementItemHide.style.display = 'none';
+    if (elementItemHide2) elementItemHide2.style.display = 'none';
+    if (elementChange3) elementChange3.style.display = 'none';
     if (elementImage) elementImage.style.display = 'none';
     if (elementProps) elementProps.style.display = 'none';
 }
