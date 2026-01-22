@@ -246,7 +246,7 @@ resize: none;
 
 window.addEventListener('load', function() {
 
-const existingDiv = document.querySelector('.print-acceptance');
+const existingDiv = document.querySelector('.payment-method-content');
 const existingDiv2 = document.querySelector('.report');
 const productManu = document.querySelector('.product-props');
 const divText = productManu.textContent;
